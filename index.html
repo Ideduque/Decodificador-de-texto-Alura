@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+        <title>Decodificador de texto</title>
+    </head>
+<body>
+    <header>
+        <img class="logoAlura" src="./imagens/logoAlura.png" alt="Logo da Alura">
+    </header>
+    <main>
+        <section class="section1">
+            <textarea type="text" id="idText" class="textArea" placeholder="Digite seu texto"></textarea>
+
+            <div class="fraseInformativa">
+                <h6><img src="imagens/ponto-exclamacao.png" alt="Ponto de exclamação"> Apenas letras minúsculas e sem acento.</h6>
+            </div>
+
+            <div class="botoes">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+
+        </section>
+        <section class="section2">
+            <textarea id="idResultado"  class="areaResultado" readonly></textarea>
+
+            <div class="conteudo-resultado" id="conteudoResultado">
+                <img src="./imagens/personagem.png" alt="Personagem com lupa">
+                <h3>Nenhuma mensagem encontrada</h3>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+
+            <div class="btnCopiar" >
+                <button class="btn-copiar" id="idCopiar" onclick="btnCopiar()">Copiar</button>
+            </div>
+
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="icons">
+            <a href="https://github.com/Ideduque"><ion-icon name="logo-github"></ion-icon></a>  
+            <a href="https://www.linkedin.com/in/joseilde-rocha/"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://twitter.com/Ide_dq"><ion-icon name="logo-twitter"></ion-icon></a>
+          </div>
+          <h3>Copyright &copy; Desenvolvido por Joseilde Duque | 2023 | Challenge1 Oracle + Alura</h3>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
